@@ -49,7 +49,7 @@ footer div {
 
 .ampersand {
   color: rgba(255,255,255,0.35);
-  font-family: 'Baskerville', serif;
+  font-family: 'baskerville-urw', 'Baskerville', serif;
   font-size: 200vw;
   height: 100%;
   left: 0;
@@ -64,6 +64,7 @@ footer div {
   content: "&";
   display: block;
   left: 50%;
+  line-height: 0.7;
   margin-left: -.375em;
   position: absolute;
   user-select: none;
