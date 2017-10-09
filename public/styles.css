@@ -64,10 +64,10 @@ footer div {
   content: "&";
   display: block;
   left: 50%;
-  line-height: 0.7;
   margin-left: -.375em;
   position: absolute;
   user-select: none;
+  top: -0.025em;
   width: 0.75em;
 }
 
