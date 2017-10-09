@@ -24,6 +24,12 @@ header {
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,0.26), 0 2px 6px rgba(0,0,0,0.13);
   text-transform: uppercase;
+  transition: opacity 3s;
+  opacity: 1;
+}
+
+header.hidden {
+  opacity: 0;
 }
 
 header .date {
@@ -62,7 +68,7 @@ footer .hashtag {
 }
 
 .ampersand {
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.25);
   font-family: 'Baskerville', serif;
   font-size: 200vw;
   height: 100%;
@@ -72,6 +78,8 @@ footer .hashtag {
   position: absolute;
   top: 0;
   width: 100%;
+  transition: opacity 3s;
+  opacity: 1;
 }
 
 .ampersand:after {
@@ -82,6 +90,10 @@ footer .hashtag {
   position: absolute;
   user-select: none;
   width: 0.75em;
+}
+
+.ampersand.hidden {
+  opacity: 0;
 }
 
 @media (min-width:30rem){

@@ -18,7 +18,9 @@ var app = (function() {
 
     showAll: function() {
       var self = this;
-      setTimeout(function() { self.showFooter() }, 1000);
+      setTimeout(function() { self.showHeader(); }, 500);
+      setTimeout(function() { self.showAmpersand(); }, 500);
+      setTimeout(function() { self.showFooter(); }, 2000);
       return this;
     },
 
