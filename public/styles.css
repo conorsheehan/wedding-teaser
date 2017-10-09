@@ -32,13 +32,27 @@ header .date {
 
 footer {
   bottom: 0;
+  height: 4rem;
   position: absolute;
+  overflow: hidden;
   text-align: center;
   width: 100%;
 }
 
-footer div {
+footer > div {
+  top: 1rem;
+  height: 100%;
+  position: absolute;
+  transition: top 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   background: rgba(0,0,0,0.65);
+  width: 100%;
+}
+
+footer > .hidden {
+  top: 4rem;
+}
+
+footer .hashtag {
   display: block;
   font-size: 1.5rem;
   font-weight: 300;
@@ -71,7 +85,21 @@ footer div {
 }
 
 @media (min-width:30rem){
-  footer div {
+  footer {
+    height: 4.5rem;
+  }
+
+  footer > div {
+    left: 50%;
+    transform: translate(-50%,0);
+    width: auto;
+  }
+
+  footer > .hidden {
+    top: 4.5rem;
+  }
+
+  footer .hashtag {
     display: inline-block;
     font-size: 2rem;
     line-height: 1.75;
@@ -84,7 +112,15 @@ footer div {
 }
 
 @media (min-width:40rem){
-  footer div {
+  footer {
+    height: 6.25rem;
+  }
+
+  footer > .hidden {
+    top: 6.25rem;
+  }
+
+  footer .hashtag {
     display: inline-block;
     font-size: 3rem;
     line-height: 1.75;
